@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rectangulo</title>
+</head>
+<body>
+
+  <script>
+
+    // Creamos la clase Rectangulo
+    class Rectangulo {     
+
+      constructor(base, altura) {
+        this.base = base;
+        this.altura = altura;
+      }
+      
+     
+      // Métodos
+      area() {
+        return (this.base * this.altura)/2;
+      }
+      perimetro(){
+        return (this.base*2)+(this.altura*2)
+      }
+    }
+
+    // Creamos el objeto 
+    const cuadrado = new Rectangulo(10, 10);
+
+    // Manipulamos el objeto
+    console.log("El area del rectangulo",cuadrado.area()); // 50
+    console.log("El perimetro del rectangulo",cuadrado.perimetro()); // 40
+
+  </script>
+
+
+
+</body>
+</html>
